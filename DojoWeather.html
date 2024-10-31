@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="./DojoWeather.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <h1>Dojo Weather
+        <a href="#" onclick="alert('Burbank temperatures')">Burbank</a>
+        <a href="#" onclick="alert('Chicago temperatures')">Chicago</a>
+        <a href="#" onclick="alert('Dallas')">Dallas</a>
+    </h1>
+    <div>
+        <div class="container1">
+            <h2>San Jose</h2>
+            <div class="dropbox-temp">show temperature in
+                <select id="mySelector" name="temperature">
+                    <option value="°F">°F</option>
+                    <option value="°C">°C</option>
+                </select>
+                <div class="block" onmouseover="over(this)" onmouseout="out(this)"></div>
+            </div>
+        </div>
+        <div class="weekly-forecast">
+            <div class="temps"></div>
+            <div class="days today">Today
+                <img src="./some_rain.png" alt="pic-of-rain">
+                <p>some rain</p>
+                <div class="degree">
+                    <p class="red-temp">24°</p> <!-- High temperature -->
+                    <p class="blue-temp">18°</p> <!-- Low temperature -->
+                </div>
+            </div>
+            <div class="days tomorrow">Tomorrow
+                <img src="./some_sun.png" alt="Pic-of-sun">
+                <p>some sun</p>
+                <div class="degree">
+                    <p class="red-temp">27°</p>
+                    <p class="blue-temp">19°</p>
+                </div>
+            </div>
+            <div class="days friday">Friday
+                <img src="./some_clouds.png" alt="pic-of-clouds">
+                <p>some clouds</p>
+                <div class="degree">
+                    <p class="red-temp">21°</p>
+                    <p class="blue-temp">16°</p>
+                </div>
+            </div>
+            <div class="days saturday">Saturday
+                <img src="./some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="degree">
+                    <p class="red-temp">26°</p>
+                    <p class="blue-temp">21°</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="box-cookies" onclick="disappearbutton(this)">
+        <img src="./cookie.png" alt="cookie-image">
+        <div class="cookies-content">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                features and to analyze our traffic. <a href="#" class="read-more">Read more...</a>.</p>
+        </div>
+        <button class="btn" id="toggleButton" onclick="disappearbutton(this)">I Accept</button>
+    </div>
+    <script src="./DojoWeather.js"></script>
+</body>
+
+</html>
