@@ -17,10 +17,8 @@ Using `HTML`, `CSS`, and `JS` recreate the look and functionality of the followi
 
 - [x] When the user accepts the cookie policy, hide the fixed message
 
-- [x] Challenge: When the user changes the <select> convert the temperatures from Celsius to Fahrenheit.
+- [x] Challenge: When the user changes the `<select> `convert the temperatures from Celsius to Fahrenheit.
 
-
-<hr/>
 
 Here is an example of mine below.
 
@@ -30,6 +28,7 @@ Show Temp in °F
 ![alt text](image-2.png)
 
 Clicking the locations will create a notification.
+
 ![alt text](image-3.png)
 
 <hr/>
